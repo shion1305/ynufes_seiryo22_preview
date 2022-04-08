@@ -1,22 +1,59 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="frame">
+    <div id="site_header">
+      <h1>清陵祭HP-Demo</h1>
+      <nav>
+        <router-link to="/preview">情報入力</router-link>
+        |
+        <router-link to="/preview/page1">企画詳細ページ</router-link>
+      </nav>
+    </div>
+    <div id="main_view">
+      <router-view/>
+    </div>
+  </div>
 </template>
+<script>
+window.onbeforeunload = function () {
+  return '現在のデータは保存されません。ページを離れてもよろしいですか?';
+};
+export default {
+  data() {
+    return {
+      test_prop: "test",
+    };
+  },
+};
+</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped lang="scss">
+
+#site_header {
+  width: 100%;
+  position: fixed;
+  height: 150px;
+  z-index: 60;
+  background: white;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
-  padding: 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 100;
 }
 
 nav a {
@@ -26,5 +63,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#main_view {
+  margin-top: 150px;
 }
 </style>
