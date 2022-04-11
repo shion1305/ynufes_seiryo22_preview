@@ -40,7 +40,7 @@
                       allowfullscreen></iframe>
             </div>
             <h3 style="text-align: center">(↓PDF(Web展示)の場合)</h3>
-            <iframe src="test_pdf.pdf" class="pdf_area"></iframe>
+            <iframe src="/test_pdf.pdf" class="pdf_area"></iframe>
           </div>
         </div>
         <footer>
