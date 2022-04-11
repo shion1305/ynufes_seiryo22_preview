@@ -11,7 +11,7 @@ export default createStore({
             imgLocation: "/preview/sample_icon.png",
             eventName: "YNUお菓子の展覧会",
             orgName: "YNU Sweets Lab.",
-            eventDescription: "お菓子の",
+            eventDescription: "普段私たちが普段作っているお菓子のレシピを公開してしまいます!",
             orgDescription: ""
         }
     },
