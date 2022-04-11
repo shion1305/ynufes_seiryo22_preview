@@ -5,6 +5,8 @@
       <nav>
         <router-link to="/">情報入力</router-link>
         |
+        <router-link to="/page2">企画一覧ページ(プレビューページ)</router-link>
+        |
         <router-link to="/page1">企画詳細ページ(プレビューページ)</router-link>
       </nav>
     </div>
