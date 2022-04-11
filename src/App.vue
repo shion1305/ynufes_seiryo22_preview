@@ -3,9 +3,9 @@
     <div id="site_header">
       <h1>清陵祭HP-Demo</h1>
       <nav>
-        <router-link to="/preview">情報入力</router-link>
+        <router-link to="/">情報入力</router-link>
         |
-        <router-link to="/preview/page1">企画詳細ページ</router-link>
+        <router-link to="/page1">企画詳細ページ(プレビューページ)</router-link>
       </nav>
     </div>
     <div id="main_view">

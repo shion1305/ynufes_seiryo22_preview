@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="wrapper">
-      <img class="background_img" src="/background_img.png" alt=""/>
+      <img class="background_img" src="@/assets/background_img.png" alt=""/>
       <div class="body-frame">
         <div class="content-frame">
           <div class="content-block">
@@ -58,19 +58,19 @@
                   <a
                   ><img
                       class="hover-to-shrink"
-                      src="/twitter_logo.png"
+                      src="@/assets/twitter_logo.png"
                       alt="twitter"
                   /></a>
                   <a
                   ><img
                       class="hover-to-shrink"
-                      src="/instagram_logo.png"
+                      src="@/assets/instagram_logo.png"
                       alt="instagram"
                   /></a>
                   <a
                   ><img
                       class="hover-to-shrink"
-                      src="/facebook_logo.png"
+                      src="@/assets/facebook_logo.png"
                       alt="facebook"
                   /></a>
                 </div>
