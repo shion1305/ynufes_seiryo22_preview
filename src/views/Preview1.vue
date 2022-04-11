@@ -32,7 +32,8 @@
               {{ $store.getters.entities.eventDescription }}
             </div>
             <!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/QN2cO2l8XGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-            <h3 style="text-align: center">(↓Youtube(WEB展示/ライブ/双方向)の場合)</h3>
+            <h3 style="text-align: center">(リンク(WEB展示)の場合についてはプレビュー未対応です。)</h3>
+            <h3 style="text-align: center">(↓Youtube(WEB展示)の場合)</h3>
             <div class="youtube_area">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/S-s4LtLFQEo"
                       title="YouTube video player"
