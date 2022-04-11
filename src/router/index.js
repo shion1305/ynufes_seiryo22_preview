@@ -3,12 +3,12 @@ import DataForm from '../views/DataForm.vue'
 
 const routes = [
     {
-        path: '/',
+        path: '/preview',
         name: 'data_form',
         component: DataForm
     },
     {
-        path: '/page1',
+        path: '/preview/page1',
         name: 'page1',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -16,7 +16,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "preview" */ '../views/Preview1.vue')
     },
     {
-        path: '/page2',
+        path: '/preview/page2',
         name: 'page2',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route

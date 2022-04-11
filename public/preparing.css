@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url("src/assets/background_img.png");
+    background-image: url("background_img.png");
     object-fit: cover;
     height: 100vh;
 }
