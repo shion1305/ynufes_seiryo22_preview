@@ -2,47 +2,90 @@
   <div class="body">
     <div class="wrapper">
       <img class="background_img" src="@/assets/background_img.png" alt=""/>
+
       <div class="body-frame">
         <div class="content-frame">
-          <div class="content-block">
-            <div class="top_area">
-              <div class="icon_title_block">
-                <div class="icon_area">
-                  <img
-                      :src="$store.getters.entities.imgLocation"
-                      class="icon"
-                      alt="icon"
-                  />
-                </div>
-                <div class="space_between_icon_title"></div>
-                <div class="title_block">
-                  <div class="title">
-                    {{ $store.getters.entities.eventName }}
-                  </div>
-                  <hr/>
-                  <div class="organization_name">{{ $store.getters.entities.orgName.replaceAll('\n', 'br') }}</div>
-                  <div class="tag_frame">
-                    <div class="tag"><p>Web展示(PDF)</p></div>
-                  </div>
+          <div class="events_block">
+            <div class="event_widget">
+              <img :src="$store.getters.entities.imgLocation"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>
+                  {{ $store.getters.entities.eventName }}
+                </h2>
+                <hr>
+                <div class="org_name">
+                  {{ $store.getters.entities.orgName }}
                 </div>
               </div>
             </div>
-            <div class="detail_block">
-              <h1>企画説明</h1>
-              {{ $store.getters.entities.eventDescription }}
+            <div class="event_widget">
+              <img src="@/assets/sample_icon_1.png"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>
+                  テスト企画名テスト1
+                </h2>
+                <hr>
+                <div class="org_name">
+                  企画テスト団体
+                </div>
+              </div>
             </div>
-            <!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/QN2cO2l8XGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-            <h3 style="text-align: center">(↓Youtube(WEB展示/ライブ/双方向)の場合)</h3>
-            <div class="youtube_area">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/S-s4LtLFQEo"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+            <div class="event_widget">
+              <img src="@/assets/sample_icon_2.png"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>
+                  企画名テストイベント
+                </h2>
+                <hr>
+                <div class="org_name">
+                  企画名テスト団体
+                </div>
+              </div>
             </div>
-            <h3 style="text-align: center">(↓PDF(Web展示)の場合)</h3>
-            <iframe src="test_pdf.pdf" class="pdf_area"></iframe>
+            <div class="event_widget">
+              <img src="@/assets/sample_icon_3.png"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>
+                  企画名テストイベント
+                </h2>
+                <hr>
+                <div class="org_name">
+                  企画テスト団体
+                </div>
+              </div>
+            </div>
+            <div class="event_widget">
+              <img src="@/assets/sample_icon_4.png"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>
+                  テストイベント名
+                </h2>
+                <hr>
+                <div class="org_name">
+                  テストイベント団体
+                </div>
+              </div>
+            </div>
+            <div class="event_widget">
+              <img src="@/assets/sample_icon_5.png"/>
+              <div class="type">Web展示</div>
+              <div class="meta_area">
+                <h2>企画テストイベント</h2>
+                <hr>
+                <div class="org_name">
+                  企画テストイベントダミー団体
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
         <footer>
           <div class="footer_wrapper">
             <nav class="sitemap">
@@ -57,52 +100,126 @@
             </nav>
             <div class="footer_org">
               <div class="logos_area">
-                <img
-                    src="https://ynu-fes.yokohama/wp-content/uploads/2020/02/cropped-YNUFES-%E3%83%AD%E3%82%B4.jpg"
-                    alt="YNUFES logo"
-                />
+                <img src="https://ynu-fes.yokohama/wp-content/uploads/2020/02/cropped-YNUFES-%E3%83%AD%E3%82%B4.jpg"
+                     alt="YNUFES logo"/>
                 <div class="sns">
-                  <a
-                  ><img
-                      class="hover-to-shrink"
-                      src="@/assets/twitter_logo.png"
-                      alt="twitter"
-                  /></a>
-                  <a
-                  ><img
-                      class="hover-to-shrink"
-                      src="@/assets/instagram_logo.png"
-                      alt="instagram"
-                  /></a>
-                  <a
-                  ><img
-                      class="hover-to-shrink"
-                      src="@/assets/facebook_logo.png"
-                      alt="facebook"
-                  /></a>
+                  <a><img class="hover-to-shrink" src="@/assets/twitter_logo.png" alt="twitter"/></a>
+                  <a><img class="hover-to-shrink" src="@/assets/instagram_logo.png" alt="instagram"/></a>
+                  <a><img class="hover-to-shrink" src="@/assets/facebook_logo.png" alt="facebook"/></a>
                 </div>
               </div>
               <div class="organ_area">
                 <div>
-                  <h3>横浜国立大学<br/>大学祭実行委員会</h3>
-                  〒240-0067<br/>神奈川県横浜市保土ヶ谷区常盤台79-1
-                  <br/>文化サークル棟1F <br/>大学祭実行委員会室 <br/>
-                  ynu.fes.c☆gmail.com <br/>
-                  ※☆を＠に変えてメールをお送りください。
+                  <h3>横浜国立大学<br>大学祭実行委員会</h3>
+                  〒240-0067<br>神奈川県横浜市保土ヶ谷区常盤台79-1
+                  <br>文化サークル棟1F
+                  <br>大学祭実行委員会室
+                  <br> ynu.fes.c☆gmail.com
+                  <br> ※☆を＠に変えてメールをお送りください。
                 </div>
               </div>
             </div>
           </div>
-          <div style="font-size: 0.8rem; padding-top: 1rem">
-            Copyright &#169;2022 横浜国立大学 大学祭実行委員会
-          </div>
+          <div style="font-size: 0.8rem; padding-top:1rem">Copyright &#169;2022 横浜国立大学 大学祭実行委員会</div>
         </footer>
       </div>
-      <!--        ここまで-->
+
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Preview2"
+}
+</script>
+
 <style lang="scss" scoped>
+
+
+.conditions_block {
+  max-width: 70rem;
+  width: 100%;
+  background: #de31aa;
+  height: 10rem;
+}
+
+.events_block {
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70rem;
+  width: 100%;
+
+  .event_widget {
+    border-radius: 1rem;
+    width: 12rem;
+    background: #ffffff66;
+    position: relative;
+    text-overflow: ellipsis;
+
+    .type {
+      color: white;
+      position: absolute;
+      top: 10.8rem;
+      margin: 0.3rem;
+      background: #de31aa;
+      border-radius: 1rem;
+      padding: 0.2rem;
+    }
+
+    > img {
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      width: 100%;
+    }
+
+    > .meta_area {
+      margin: 1.2rem 1rem;
+
+      h2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-height: 2.8rem;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    > hr {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tag_area {
+      margin-top: 0.3rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+
+      > div {
+        font-size: 0.8rem;
+        color: white;
+        padding: 0.3rem;
+        border-radius: 0.6rem;
+        background: #de31aa;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+//COMMON_SCSS_STARTS_HERE
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -404,25 +521,11 @@ footer {
   height: 500px;
 }
 
-.youtube_area {
-  position: relative;
-  width: 100%; /*横幅いっぱいにwidthを指定*/
-  height: 0; /*高さはpaddingで指定するため0*/
-  padding-top: 56.25%; /*高さを指定（padding-bottomでも同様)*/
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .detail_block {
   h1 {
     width: 100%;
   }
-  padding-bottom: 5rem;
+
   white-space: pre-wrap;
   box-sizing: border-box;
   width: 100%;
@@ -447,9 +550,3 @@ footer {
   }
 }
 </style>
-
-<script>
-export default {
-  name: "EventDetail",
-};
-</script>

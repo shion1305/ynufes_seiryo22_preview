@@ -1,5 +1,7 @@
 <template>
   <div class="content-frame">
+    <h1 style="text-align: center; background: #de31aa; color: white">4/17(日)までの提出をお願いします。</h1>
+    <h2>4/11にプレビューサイトを更新しました。</h2>
     <div style="width: 100%; border-radius: 1rem; border-style: solid; border-width: 2px;">
       <h1>本プレビューサイトのご利用にあたって</h1>
       本サイトで入力頂きましたデータは一切保存されません。各データの提出は<a

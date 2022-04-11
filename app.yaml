@@ -3,7 +3,7 @@ env: standard
 handlers:
   - url: /
     static_files: dist/preparing.html
-    upload: dist/preparing.css
+    upload: dist/preparing.html
   - url: /preview
     static_files: dist/index.html
     upload: dist/index.html
