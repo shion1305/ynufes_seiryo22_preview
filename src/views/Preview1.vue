@@ -20,9 +20,9 @@
                     {{ $store.getters.entities.eventName }}
                   </div>
                   <hr/>
-                  <div class="organization_name">{{ $store.getters.entities.orgName.replaceAll('\n', 'br')}}</div>
+                  <div class="organization_name">{{ $store.getters.entities.orgName.replaceAll('\n', 'br') }}</div>
                   <div class="tag_frame">
-                    <div class="tag"><p>ジャンルタグ(設定不要)</p></div>
+                    <div class="tag"><p>Web展示(PDF)</p></div>
                   </div>
                 </div>
               </div>
@@ -32,8 +32,15 @@
               {{ $store.getters.entities.eventDescription }}
             </div>
             <!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/QN2cO2l8XGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-            <!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/HpdO5Kq3o7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-            <!--                <iframe src="https://s3-ap-northeast-1.amazonaws.com/cdn.aprico-media.com/resources/sample.pdf" class="pdf_area"></iframe>-->
+            <h3 style="text-align: center">(↓Youtube(WEB展示/ライブ/双方向)の場合)</h3>
+            <div class="youtube_area">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/S-s4LtLFQEo"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+            <h3 style="text-align: center">(↓PDF(Web展示)の場合)</h3>
+            <iframe src="test_pdf.pdf" class="pdf_area"></iframe>
           </div>
         </div>
         <footer>
@@ -397,10 +404,25 @@ footer {
   height: 500px;
 }
 
+.youtube_area {
+  position: relative;
+  width: 100%; /*横幅いっぱいにwidthを指定*/
+  height: 0; /*高さはpaddingで指定するため0*/
+  padding-top: 56.25%; /*高さを指定（padding-bottomでも同様)*/
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .detail_block {
   h1 {
     width: 100%;
   }
+  padding-bottom: 5rem;
   white-space: pre-wrap;
   box-sizing: border-box;
   width: 100%;
